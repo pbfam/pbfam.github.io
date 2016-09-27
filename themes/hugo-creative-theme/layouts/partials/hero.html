@@ -1,0 +1,45 @@
+{{ "<!-- HEADER -->" | safeHTML }}
+<script type="text/javascript">
+window.onload = function() {
+    var index = 0;
+	$imageEls = $('.toggle-image'); // Get the images to be cycled.
+
+    $imageUnicorn = $('.u'); //
+                
+	setInterval(function () {
+		if (ee==1) {
+            // show easter egg
+            $imageUnicorn.eq(0).addClass('show');
+            // Hide the previous image.
+            $imageEls.eq(index).removeClass('show');
+            ee=0;
+        } else {
+            // Get the next index.  If at end, restart to the beginning.
+            index = index + 1 < $imageEls.length ? index + 1 : 0;
+            // Show the next image.
+            $imageEls.eq(index).addClass('show');
+            // Hide the previous image.
+            $imageEls.eq(index - 1).removeClass('show');
+            $imageUnicorn.eq(0).removeClass('show');
+        }
+    }, 5000);
+};    
+</script>
+
+<header>
+<div class="background-image toggle-image first-image show"></div>
+<div class="background-image toggle-image second-image"></div>
+<div class="background-image toggle-image third-image"></div>
+<div class="background-image toggle-image fourth-image"></div>
+<div class="background-image toggle-image fifth-image"></div>
+<div class="background-image u"></div>    
+    <div class="header-content">
+        <div class="header-content-inner">
+            <img class="hero-logo" src="../img/edge_logo.png">
+            <h1>{{ with .Site.Params.hero.slogan }}{{ . | markdownify  }}{{ end }}<h2 style="color:#FF5722">βeta</h2></h1>
+            <hr>
+            <p>{{ with .Site.Params.hero.subtitle }}{{ . | markdownify }}{{ end }}</p>
+            <a href="{{ .Site.Params.hero.buttonLink }}" class="btn btn-primary btn-xl page-scroll">{{ .Site.Params.hero.buttonText }}</a>
+        </div>
+    </div>
+</header>
