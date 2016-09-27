@@ -1,0 +1,24 @@
+{{ "<!-- ASIDE -->" | safeHTML }}
+
+<aside class="bg-dark">
+    <div class="container text-center" style="margin-top: 40px; margin-bottom: 40px;">
+        <div class="call-to-action">
+            <h2>{{ with .Site.Params.aside.headline }}{{ . }}{{ end }}</h2>
+            <a href="{{ with .Site.Params.aside.button.link }}{{ . }}{{ end }}" class="btn btn-default btn-xl wow tada">{{ with .Site.Params.aside.button.text }}{{ . }}{{ end }}</a>
+            </div>
+    </div>
+    
+</aside>
+<aside class="bg-darkgreen">
+<div class="container text-center" style="margin-top: 40px">
+        <div class="call-to-action">
+            <h2>{{ with .Site.Params.aside.community }}{{ . }}{{ end }}</h2>
+            <h3>Stay up-to-date with the latest Predix Edge information</h3>
+            <hr class="light">
+            <a target="_blank" href="{{ with .Site.Params.aside.signup.link }}{{ . }}{{ end }}" class="btn btn-default btn-xl wow tada">{{ with .Site.Params.aside.signup.text }}{{ . }}{{ end }}</a>
+            <h4>1. Click Sign Up</h4>
+            <h4>2. Search for "@Research Predix Edge Community"</h4>
+            <h4>3. Click Join to be added to the distrubution list</h4>
+            </div>
+    </div>
+</aside>

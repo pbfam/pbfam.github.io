@@ -1,0 +1,130 @@
+{{ "<!-- ABOUT -->" | safeHTML }}
+<section class="bg-primary" id="approach">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 text-center" style="margin-bottom:40px">
+                <h2 class="section-heading">{{ with .Site.Params.approach.headline }}{{ . }}{{ end }}</h2>
+                <hr class="light">
+                <br>
+                <img src="img/predix-edge-diagram.png" style="width: 50%">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 text-center">
+                <h3>Tiered HW/SW Systems</h3>
+                Architected to run on a range of hardware platforms to deliver tiered solutions from sensor to control server. Designed to support easy porting to new hardware platforms.
+            </div>
+            
+            <div class="col-lg-4 col-md-6 text-center">
+                <h3>Software Platform</h3>
+                Container based architecture with support for multi-language applications and analytics. Fosters reuse of existing GE investment through a micro-service architecture in an industry standard manner.
+            </div>
+          
+            <div class="col-lg-4 col-md-6 text-center">
+                <h3>DevOps Infrastructure</h3>
+                Implemented using DevOps paradigm to enable continuous delivery for edge services and applications. Provides better quality and reliable solutions to our business customers.
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 text-center" style="margin-top:40px">
+              <a class="page-scroll" href="#hardware"><img src="img/arrow-down-light.png" style="height: 30px;"></a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="hardware">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 text-center" style="margin-bottom:40px">
+                <h2 class="section-heading">{{ with .Site.Params.approach.subsection1 }}{{ . }}{{ end }}</h2>
+                <hr>
+                <img src="img/hwsw_systems.png" style="width: 100%">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 text-center" style="margin-top:40px">
+                <a class="page-scroll" href="#software"><img src="img/arrow-down-dark.png" style="height: 30px;"></a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Software Platform Section-->
+<section class="bg-dark" id="software">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 text-center" style="margin-bottom:40px">
+                <h2 class="section-heading">{{ with .Site.Params.approach.subsection2 }}{{ . }}{{ end }}</h2>
+                <hr class="light">
+                <img src="img/predix-diagram-white.png" style="width: 100%; max-width: 800px;">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 text-center">
+                <h3>Control / Data Plane</h3>
+                Common Data Bus, Open-source Transport (ZeroMQ), Multiple Language Bindings (e.g. C, C++, Golang, Python, Java, Node.js)
+            </div>            
+            <div class="col-lg-4 col-md-6 text-center">
+                <h3>Applications & Services</h3>
+                Optimizing controls (MBOC), Advanced analytics (e.g. MBOC), Rules engines/CEP, Control/Data Plane, Persistence, Logging, Service discovery/Registration
+            </div>
+            <div class="col-lg-4 col-md-6 text-center">
+                <h3>Admin & Management Services</h3>
+                Network Management (SDN), Configuration Management, Health Diagnostics, Resource Monitoring, Edge Management Agent, Technician Console
+            </div>
+        </div>  
+        <div class="row">
+            <div class="col-lg-4 col-md-6 text-center">
+                <h3>Gateway Services</h3>
+                MQTT, HTTP(S), DDS, CoAP, WebSocket/SSH, TLS
+            </div>
+            <div class="col-lg-4 col-md-6 text-center">
+                <h3>Security</h3>
+                Certificate Management, User Management, Firewall
+            </div>
+            <div class="col-lg-4 col-md-6 text-center">
+                <h3>Device Adapter</h3>
+                OPC-UA, MODBUS (Kepware), EGD, MTConnect (Kepware)
+            </div>
+        </div>  
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 text-center" style="margin-top:40px">
+                <a class="page-scroll" href="#devops"><img src="img/arrow-down-light.png" style="height: 30px;"></a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="devops">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 text-center" style="margin-bottom:40px">
+                <h2 class="section-heading">{{ with .Site.Params.approach.subsection3 }}{{ . }}{{ end }}</h2>
+                <hr class="green">
+                <img src="img/devops_flow.png" style="width: 100%; max-width: 550px;">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 text-center" style="margin-bottom:40px">
+                <hr class="light">
+                <img src="img/company_list_black.png" style="width: 90%">
+            </div>
+        </div>
+    </div>
+</section>
+<section  class="background-image spacer-image bg-black" id="approach">
+    <div class="container">
+            <div style="font-size: 40px; font-weight:bold" class="text-center">
+               Building Industrial IoT Applications at the EDGE
+            </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 text-center" style="margin-bottom:-80px">
+                <p>"Edge-based software-defined machines (SDMs) like blowout preventers, turbines, medical equipment, streetlights, and locomotives leverage edge-to-cloud architecture. These SDMs are evolving and leveraging the modern edge-to-cloud platform for the Industrial Internet. Now, applications can not only collect data locally and respond to changes in that data, but they can also perform meaningful localized analytics."</p>
+              <small>- <b>Nikhil Chauhan</b>, Director of Product Marketing for GE Digital</small>
+            </div>
+        </div>
+    </div>
+</section>
+
