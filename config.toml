@@ -2,6 +2,7 @@ baseurl = "http://localhost:1313/"
 languageCode = "en-us"
 title = "Predix Edge"
 theme = "hugo-creative-theme"
+canonifyurls = true
 
 [params]
 
