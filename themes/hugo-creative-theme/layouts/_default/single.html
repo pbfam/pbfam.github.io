@@ -1,0 +1,41 @@
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body id="page-top">
+  {{ partial "nav.html" . }}
+
+  <header style="min-height:0px;"></header>
+  
+  <section style="height:100%; background-color: #00a7e9; color: white; padding: 0px;">
+    <div class="container">
+        <div class="row">
+          <h2>Purpose</h2>
+          <p>Despite the increasing attention to powder bed fusion additive manufacturing (PBFAM), the lack of open-
+source standard protocols for driving PBFAM machines has hampered research efforts because users do
+not have access to specific process parameter information and toolpaths generated from the STL file. This
+limits the ability of researchers to perform controlled validation experiments that support modeling efforts
+and hinders development of more robust process control and optimization strategies.
+To address this issue, GE Global Research, GE Aviation’s Additive Development Center (ADC), and
+the Lawrence Livermore National Laboratory (LLNL) partnered to develop, document, and dem-
+onstrate open-source protocols and machine controllers for PBFAM on commercial and custom-made
+metal additive machines.</p>
+            
+            <p>Two new protocols were developed with input from the open-source
+PBFAM community: a LAYER Protocol and a SCAN Protocol. The LAYER protocol describes the
+physical attributes of all regions comprising a specific layer. The SCAN protocol describes the laser
+scan pattern to fuse the layers.The decision to adopt separate LAYER and SCAN protocols is a strategic
+endeavor to gain fast international acceptance because both protocols will be simple, scalable, comprehen-
+sive, extensible, and independent of PBFAM machine type. 
+        </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+        <div class="row">
+          <h2>Footer</h2>
+          <p>Please fill to attribute authors.</p>
+        </div>
+    </div>
+  </footer>
+  {{ partial "js.html" . }} 
+</body>

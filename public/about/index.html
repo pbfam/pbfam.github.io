@@ -1,7 +1,5 @@
-<!DOCTYPE html>
-<html lang="en-us">
-    <head>
-        <meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="GE Global Research">
@@ -27,9 +25,9 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-    </head>
-    <body id="page-top">
-        <!-- NAVIGATION -->
+</head>
+<body id="page-top">
+  <!-- NAVIGATION -->
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -65,68 +63,40 @@
 </nav>
 
 
-        <!-- HEADER -->
-<header>
-
-<img src="../img/header.png" style="width:100%">
-<div class="background-image u"></div>    
-
-</header>
-
-        <!-- ABOUT -->
-
-<section class="bg-dark" id="software">
+  <header style="min-height:0px;"></header>
+  
+  <section style="height:100%; background-color: #00a7e9; color: white; padding: 0px;">
     <div class="container">
         <div class="row">
-            <div class="col-lg-3 col-md-6 text-center">
-                <h3>Protocols</h3>
-                XML schemas for encoding layer info and scan pattern 
-                <ul style="padding-left:0px; padding-top:10px;">
-                  <li><a href="#page-top" style="color:white; font-weight:bold;">Source</a></li>
-                  <li><a href="#page-top" style="color:white; font-weight:bold;">Release</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-3 col-md-6 text-center">
-                <h3>Layer Generation</h3>
-                Generate layer files from geometry file. Currently supports STL format. 
-                <ul style="padding-left:0px; padding-top:10px;">
-                  <li><a href="#page-top" style="color:white; font-weight:bold;">Source</a></li>
-                  <li><a href="#page-top" style="color:white; font-weight:bold;">Release</a></li>
-                </ul>
-            </div>            
-            <div class="col-lg-3 col-md-6 text-center">
-                <h3>Scan Generation</h3>
-                From layer files create a series of move commands combined with the laser power, speed, and focus. 
-                <ul style="padding-left:0px; padding-top:10px;">
-                  <li><a href="#page-top" style="color:white; font-weight:bold;">Source</a></li>
-                  <li><a href="#page-top" style="color:white; font-weight:bold;">Release</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-3 col-md-6 text-center">
-                <h3>Controller</h3>
-                Machine agnostic PBFAM/SLM printing control software built with LabVIEW 
-                <ul style="padding-left:0px; padding-top:10px;">
-                  <li><a href="#page-top" style="color:white; font-weight:bold;">Source</a></li>
-                  <li><a href="#page-top" style="color:white; font-weight:bold;">Release</a></li>
-                </ul>
-            </div>
+          <h2>Purpose</h2>
+          <p>Despite the increasing attention to powder bed fusion additive manufacturing (PBFAM), the lack of open-
+source standard protocols for driving PBFAM machines has hampered research efforts because users do
+not have access to specific process parameter information and toolpaths generated from the STL file. This
+limits the ability of researchers to perform controlled validation experiments that support modeling efforts
+and hinders development of more robust process control and optimization strategies.
+To address this issue, GE Global Research, GE Aviation’s Additive Development Center (ADC), and
+the Lawrence Livermore National Laboratory (LLNL) partnered to develop, document, and dem-
+onstrate open-source protocols and machine controllers for PBFAM on commercial and custom-made
+metal additive machines.</p>
+            
+            <p>Two new protocols were developed with input from the open-source
+PBFAM community: a LAYER Protocol and a SCAN Protocol. The LAYER protocol describes the
+physical attributes of all regions comprising a specific layer. The SCAN protocol describes the laser
+scan pattern to fuse the layers.The decision to adopt separate LAYER and SCAN protocols is a strategic
+endeavor to gain fast international acceptance because both protocols will be simple, scalable, comprehen-
+sive, extensible, and independent of PBFAM machine type. 
         </div>
     </div>
-</section>
-
-
-
-        <footer>
-          <section style="padding:0px;margin-top:30px;">
-            <div class="container">
-              <div class="row">
-                <h4 style="text-transform:capitalize; font-weight:bold;">License</h4>
-                <p>Link to github MIT License.</p>
-              </div>
-            </div>
-          </section>
-        </footer>
-        <!-- jQuery -->
+  </section>
+  <footer>
+    <div class="container">
+        <div class="row">
+          <h2>Footer</h2>
+          <p>Please fill to attribute authors.</p>
+        </div>
+    </div>
+  </footer>
+  <!-- jQuery -->
 <script src="http://localhost:1313/js/jquery.js"></script>
 <!-- Bootstrap Core JavaScript -->
 <script src="http://localhost:1313/js/bootstrap.min.js"></script>
@@ -137,9 +107,7 @@
 <!-- Custom Theme JavaScript -->
 <script src="http://localhost:1313/js/creative.js"></script>
  
-    <script data-no-instant>document.write('<script src="http://'
+<script data-no-instant>document.write('<script src="http://'
         + (location.host || 'localhost').split(':')[0]
 		+ ':1313/livereload.js?mindelay=10"></'
         + 'script>')</script></body>
-    
-</html>

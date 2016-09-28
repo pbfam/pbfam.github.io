@@ -9,27 +9,22 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand page-scroll" href="#page-top">{{ with .Site.Params.navigation.brand }}{{ . | markdownify }}{{ end }}</a>
+            <a class="navbar-brand page-scroll" href="/">{{ with .Site.Params.navigation.brand }}{{ . | markdownify }}{{ end }}</a>
+            <small class="navbar-info page-scroll">{{ with .Site.Params.hero.subtitle }}{{ . | markdownify }}{{ end }}</small>
         </div>
         {{ "<!-- Collect the nav links, forms, and other content for toggling -->" | safeHTML }}
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
                    <a href="{{ .Site.Params.navigation.links.github }}">
-                      <i class="fa fa-github wow bounceIn icon-github"></i>
+                      Github
                   </a>
-                </li>
-                <li>
-                    <a href="{{ .Site.Params.navigation.links.registry }}">Registry</a>
                 </li>
                 <li>
                     <a href="{{ .Site.Params.navigation.links.docs }}">Docs</a>
                 </li>
                 <li>
-                    <a href="{{ .Site.Params.navigation.links.guides }}">Guides</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="{{ .Site.Params.navigation.links.contact }}">Contact</a>
+                    <a class="page-scroll" href="{{ .Site.Params.navigation.links.about }}">About</a>
                 </li>
             </ul>
         </div>
