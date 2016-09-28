@@ -113,6 +113,8 @@ aside {
     font-size: 18px;
     line-height: 20px;
     color: rgba(255,255,255,.7);
+    position:absolute;
+    opacity: 0;
 }
 
 .navbar-default {
@@ -161,6 +163,14 @@ aside {
 }
 
 @media(min-width:768px) {
+  
+    .navbar-default .navbar-header .navbar-info {
+        font-size: 14px;
+        color: rgba(255,255,255,.7);
+        position:absolute;
+        opacity: 1;
+    }
+    
     .navbar-default {
         border-color: rgba(255,255,255,.3);
         background-color: transparent;
@@ -198,6 +208,8 @@ aside {
     .navbar-default.affix .navbar-header .navbar-info {
         font-size: 14px;
         color: #ed1c24;
+        position:absolute;
+        opacity: 1;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
