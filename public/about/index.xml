@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Abouts on PBFAM</title>
-    <link>http://localhost:1313/about/</link>
+    <link>https://pbfam.github.io/about/</link>
     <description>Recent content in Abouts on PBFAM</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 28 Sep 2016 00:20:35 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/about/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://pbfam.github.io/about/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>index</title>
-      <link>http://localhost:1313/about/</link>
+      <link>https://pbfam.github.io/about/</link>
       <pubDate>Wed, 28 Sep 2016 00:20:35 -0400</pubDate>
       
-      <guid>http://localhost:1313/about/</guid>
+      <guid>https://pbfam.github.io/about/</guid>
       <description>&lt;p&gt;Some content&lt;/p&gt;
 </description>
     </item>
