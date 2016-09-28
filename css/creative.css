@@ -1,143 +1,3 @@
-/* START CUSTOM CSS
- * GRC 2016
- * Brandon Good
-/
-
-/* Basic background image styling. */
-.background-image {
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.top {    
-  margin-top: -50px;
-  padding: 70px; /* Added a percentage value for top/bottom padding to keep the wrapper inside of the parent */
-  
-  -webkit-transform: skewY(-3deg);
-  -moz-transform: skewY(-3deg);
-  -ms-transform: skewY(-3deg);
-  -o-transform: skewY(-3deg);
-  transform: skewY(-3deg);
-}
-.bottom {    
-  margin-bottom: -50px;
-  padding: 70px; /* Added a percentage value for top/bottom padding to keep the wrapper inside of the parent */
-  
-  -webkit-transform: skewY(-3deg);
-  -moz-transform: skewY(-3deg);
-  -ms-transform: skewY(-3deg);
-  -o-transform: skewY(-3deg);
-  transform: skewY(-3deg);
-}
-
-.top_right {    
-  margin-top: -50px;
-  padding: 70px; /* Added a percentage value for top/bottom padding to keep the wrapper inside of the parent */
-  
-  -webkit-transform: skewY(3deg);
-  -moz-transform: skewY(3deg);
-  -ms-transform: skewY(3deg);
-  -o-transform: skewY(3deg);
-  transform: skewY(3deg);
-}
-
-.bottom_right {    
-  margin-bottom: -50px;
-  padding: 70px; /* Added a percentage value for top/bottom padding to keep the wrapper inside of the parent */
-  
-  -webkit-transform: skewY(3deg);
-  -moz-transform: skewY(3deg);
-  -ms-transform: skewY(3deg);
-  -o-transform: skewY(3deg);
-  transform: skewY(3deg);
-}
-
-/* Styles for the alternating / transition effect. */
-.toggle-image {
- 	position: absolute;
-	width: 100%;
-	top: 0;
-	left: 0;
- 	height: 100%;
-	transition: opacity 1s ease-in;
-}
-.u {
-    background-image: url(../img/header_unicorn.jpg);
-    z-index: -4;
-    opacity: 0;
-    position: absolute;
-	width: 100%;
-	top: 0;
-	left: 0;
- 	height: 100%;
-	transition: opacity 1s ease-in;
-}
-.u.show {
-	opacity: 1;
-}
-
-/* Styles for the specific images. */
-.first-image {
-	background-image: url(../img/header2.jpg);	
-	z-index: -3;
-	opacity: 0;
-}
-
-.second-image {
-	background-image: url(../img/header1.jpg);
-	z-index: -2;
-	opacity: 0;
-}
-
-.third-image {
-	background-image: url(../img/header.jpg);
-	z-index: -1;
-	opacity: 0;
-}
-.fourth-image {
-	background-image: url(../img/header3.jpg);
-	z-index: -4;
-	opacity: 0;
-}
-.fifth-image {
-	background-image: url(../img/header5.jpg);
-	z-index: -4;
-	opacity: 0;
-}
-
-.spacer-image {
-    background-image: url(../img/spacer.jpg);
-}
-
-.first-image.show {
-	opacity: 1;
-}
-
-.second-image.show {
-	opacity: 1;
-}
-
-.third-image.show {
-	opacity: 1;
-}
-.fourth-image.show {
-	opacity: 1;
-}
-.fifth-image.show {
-	opacity: 1;
-}
-
-
-.hero-logo {
-    padding-bottom: 20px;
-    width:15em;
-    height:auto;
-    width: 40%;
-    max-width: 15em;
-}
-
-/* END CUSTOM CSS/
 
 /*!
  * Start Bootstrap - Creative Bootstrap Theme (http://startbootstrap.com)
@@ -170,7 +30,7 @@ hr.green {
 }
 
 a {
-    color: #FF5722;
+    color: #ed1c24;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -210,12 +70,12 @@ p {
 }
 
 .bg-primary {
-    background-color: #ff5722;
+    background-color: #ed1c24;
 }
 
 .bg-dark {
     color: #fff;
-    background-color: #009688;
+    background-color: #9f1d21;
 }
 
 .bg-black {
@@ -242,6 +102,19 @@ aside {
     padding: 0;
 }
 
+.navbar-right {
+    margin-right: 0; !important
+}
+
+.navbar-info {
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+    color: rgba(255,255,255,.7);
+}
+
 .navbar-default {
     border-color: rgba(34,34,34,.05);
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
@@ -255,7 +128,7 @@ aside {
     text-transform: uppercase;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
-    color: #FF5722;
+    color: #ed1c24;
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
@@ -273,12 +146,12 @@ aside {
 
 .navbar-default .nav > li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
-    color: #FE3C00;
+    color: #ED1C24;
 }
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: #FE3C00!important;
+    color: #ED1C24!important;
     background-color: transparent;
 }
 
@@ -319,12 +192,17 @@ aside {
 
     .navbar-default.affix .navbar-header .navbar-brand {
         font-size: 14px;
-        color: #ff5722;
+        color: #ed1c24;
+    }
+    
+    .navbar-default.affix .navbar-header .navbar-info {
+        font-size: 14px;
+        color: #ed1c24;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
     .navbar-default.affix .navbar-header .navbar-brand:focus {
-        color: #FE3C00;
+        color: #ED1C24;
     }
 
     .navbar-default.affix .nav > li>a,
@@ -334,7 +212,7 @@ aside {
 
     .navbar-default.affix .nav > li>a:hover,
     .navbar-default.affix .nav>li>a:focus:hover {
-        color: #FE3C00;
+        color: #ED1C24;
     }
 }
 
@@ -344,7 +222,8 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background: #003737;
+    background: #004A8F;
+    padding-top: 50px;
     z-index: 0;
     background-position: center;
     -webkit-background-size: cover;
@@ -491,7 +370,7 @@ header .header-content .header-content-inner p {
 }
 
 .text-primary {
-    color: #FF5722;
+    color: #ed1c24;
 }
 
 .no-gutter > [class*=col-] {
@@ -596,12 +475,12 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    border-color: #FE3C00;
-    background-color: #FE3C00;
+    border-color: #ED1C24;
+    background-color: #ED1C24;
 }
 
 .btn-primary .badge {
-    color: #FF5722;
+    color: #ed1c24;
     background-color: #fff;
 }
 
