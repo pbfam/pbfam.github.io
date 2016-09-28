@@ -1,3 +1,11 @@
+<!--
+ * Modified from original digitalcrafstman work by Adam McCann - mccann@ge.com
+ * https://github.com/digitalcraftsman/hugo-creative-theme
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+-->
+
 # Creative Theme
 
 Creative Theme is a one page portfolio for creatives based on the [original Bootstrap theme](//github.com/IronSummitMedia/startbootstrap-creative) by [David Miller](//github.com/davidtmiller). Noteworthy features of this Hugo theme are several content sections and a responsive portfolio grid with hover effects and full page portfolio item modals.
