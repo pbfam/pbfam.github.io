@@ -115,6 +115,7 @@ aside {
     color: rgba(255,255,255,.7);
     position:absolute;
     opacity: 0;
+    z-index: -156;
 }
 
 .navbar-default {
